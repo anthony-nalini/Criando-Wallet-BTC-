@@ -79,7 +79,7 @@ node wallet.js
 Carteira Gerada
 Endereço:  mxKpY7Qn6QXy... (Exemplo)
 Chave Privada:  cVxZKp8F... (Exemplo)
-Seed:  word1 word2 word3 ... word12 (Exemplo)
+Seed:  word1 word2 word3 ... wordn (Exemplo)
 ```
 
 ### Significado das informações:
@@ -111,8 +111,12 @@ const network = bitcoin.networks.testnet
 const network = bitcoin.networks.bitcoin
 ```
 
-2. Altere o path de derivação:
+2. Altere o path de derivação de:
 
+```js
+m/49'/1'/0'/0
+```
+Para:
 ```js
 m/49'/0'/0'/0
 ```
